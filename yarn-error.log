@@ -1,0 +1,34 @@
+Arguments: 
+  /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/share/yarn/bin/yarn.js add global heroku
+
+PATH: 
+  /data/data/com.termux/files/usr/bin:/data/data/com.termux/files/usr/bin/applets
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.16.3
+
+Platform: 
+  android arm64
+
+Trace: 
+  Error: connect ENETUNREACH 104.16.16.35:443 - Local (0.0.0.0:0)
+      at internalConnect (net.js:921:16)
+      at defaultTriggerAsyncIdScope (internal/async_hooks.js:296:12)
+      at emitLookup (net.js:1063:9)
+      at /data/data/com.termux/files/usr/share/yarn/lib/cli.js:107523:28
+      at /data/data/com.termux/files/usr/share/yarn/lib/cli.js:107432:13
+      at RawTask.module.exports.RawTask.call (/data/data/com.termux/files/usr/share/yarn/lib/cli.js:83613:19)
+      at flush (/data/data/com.termux/files/usr/share/yarn/lib/cli.js:83695:29)
+      at processTicksAndRejections (internal/process/task_queues.js:79:11)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
