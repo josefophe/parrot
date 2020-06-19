@@ -13,12 +13,12 @@ app.use(bodyParser.json())
 
 // Index route
 app.get('/', function (req, res) {
-    res.send('Hello world, I am a chat bot')
+    res.send('Hello world, I am a parrot chat bot for HNG7')
 })
 
 // for Facebook verification
 app.get('/webhook/', function (req, res) {
-    if (req.query['hub.verify_token'] === 'Aha_Moment_Labs') {
+    if (req.query['hub.verify_token'] === 'HNG_Internship') {
         res.send(req.query['hub.challenge'])
     }
     res.send('Error, wrong token')
@@ -39,7 +39,7 @@ app.post('/webhook/', function (req, res) {
         sender = event.sender.id
         if (event.message && event.message.text) {
             text = event.message.text
-            if (text === 'hi') {
+            if (text === 'hng') {
                 sendGenericMessage(sender)
                 continue
             }
@@ -56,7 +56,7 @@ app.post('/webhook/', function (req, res) {
 
 var token = "EAAHxihjsn3gBANEZBPwyJdAteC5kxQPogZBxeR6eFezT4GPPgqBOJJXmu54dlv3UzvPOpPJEVEqhSpIjQUWcFNP67gd0xZBXOVRRkqTcirn802dtK51pZBQL3ETVjubZBiDEIi1AsJdbYo4I9j8fAHFq0FBflDwsMHJVl3eBe5wZDZD"
 
-// function to echo back messages - added by Stefan
+// function to echo back messages
 
 function sendTextMessage(sender, text) {
     messageData = {
@@ -89,55 +89,55 @@ function sendGenericMessage(sender) {
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "Ai Chat Bot Communities",
+                    "title": "HNG Community",
                     "subtitle": "Communities to Follow",
-                    "image_url": "http://1u88jj3r4db2x4txp44yqfj1.wpengine.netdna-cdn.com/wp-content/uploads/2016/04/chatbot-930x659.jpg",
+                    "image_url": "https://www.opportunitiesforafricans.com/wp-content/uploads/2020/05/hng-internship-2020.jpg",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://www.facebook.com/groups/aichatbots/",
-                        "title": "FB Chatbot Group"
+                        "url": "https://www.facebook.com/HNG-Internship-115577009820117/",
+                        "title": "FB HNG Page"
                     }, {
                         "type": "web_url",
-                        "url": "https://www.reddit.com/r/Chat_Bots/",
-                        "title": "Chatbots on Reddit"
+                        "url": "https://twitter.com/hnginternship/",
+                        "title": "HNG on Twitter"
                     },{
                         "type": "web_url",
-                        "url": "https://twitter.com/aichatbots",
-                        "title": "Chatbots on Twitter"
+                        "url": "mailto:hngi7@hng.tech",
+                        "title": "Email us HNG"
                     }],
                 }, {
-                    "title": "Chatbots FAQ",
-                    "subtitle": "Aking the Deep Questions",
-                    "image_url": "https://tctechcrunch2011.files.wordpress.com/2016/04/facebook-chatbots.png?w=738",
+                    "title": "Learn on Internship",
+                    "subtitle": "Ask anything on our internships",
+                    "image_url": "https://www.opportunitiesforafricans.com/wp-content/uploads/2020/05/hng-internship-2020.jpg",
                     "buttons": [{
                         "type": "postback",
                         "title": "What's the benefit?",
-                        "payload": "Chatbots make content interactive instead of static",
+                        "payload": "During the course of the internship, you will be introduced to different projects to work on. These projects could be added to your portfolio as quality samples to put you ahead of the competition when job hunting",
                     },{
                         "type": "postback",
-                        "title": "What can Chatbots do",
-                        "payload": "One day Chatbots will control the Internet of Things! You will be able to control your homes temperature with a text",
+                        "title": "Remote Learning",
+                        "payload": "Our aim is to help everyone willing to kick-start a career in tech without distance being a barrier. We have made our internship flexible to accommodate you regardless of your location or timezone",
                     }, {
                         "type": "postback",
                         "title": "The Future",
-                        "payload": "Chatbots are fun! One day your BFF might be a Chatbot",
+                        "payload": "The HNG Internship is an ambitious attempt to change the way education is done in Africa. It’s the bridge between learning to code and becoming the best in the world.",
                     }],
                 },  {
-                    "title": "Learning More",
-                    "subtitle": "Aking the Deep Questions",
+                    "title": "Become an Intern",
+                    "subtitle": "How does it work",
                     "image_url": "http://www.brandknewmag.com/wp-content/uploads/2015/12/cortana.jpg",
                     "buttons": [{
                         "type": "postback",
-                        "title": "AIML",
-                        "payload": "Checkout Artificial Intelligence Mark Up Language. Its easier than you think!",
+                        "title": "Applyto be an intern",
+                        "payload": "The HNG internship is a 3-month remote internship designed to find and develop the most talented software developers. Everyone is welcomed to participate (there is no entrance exam). Anyone can log into the internship using their laptop. Each week we give tasks!",
                     },{
                         "type": "postback",
-                        "title": "Machine Learning",
-                        "payload": "Use python to teach your maching in 16D space in 15min",
+                        "title": "Onboard team ",
+                        "payload": "Join one of the best remote learning opportunities in tech by signing up with us. Expand your knowledge with new challenging tasks and kick-start your career in tech. This is also a chance to connect with valuable and efficient teammates across the globe from the comfort of your home.",
                     }, {
                         "type": "postback",
-                        "title": "Communities",
-                        "payload": "Online communities & Meetups are the best way to stay ahead of the curve!",
+                        "title": "Products and Services",
+                        "payload": "Throughout the internship, you will work on scalable products. This will give you an insight into real-world projects and prepare you for more challenging tasks as you take on real-time jobs after the internship!",
                     }],
                 }]  
             } 
