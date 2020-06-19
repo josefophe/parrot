@@ -3,6 +3,13 @@ var bodyParser = require('body-parser')
 var request = require('request')
 var app = express()
 
+process.env.PWD = process.cwd()
+
+// for image
+app.use(express.static(process.env.PWD + '/public'));
+
+
+// server 
 app.set('port', (process.env.PORT || 5000))
 
 // Process application/x-www-form-urlencoded
@@ -91,7 +98,7 @@ function sendGenericMessage(sender) {
                 "elements": [{
                     "title": "HNG Community",
                     "subtitle": "Communities to Follow",
-                    "image_url": "https://www.opportunitiesforafricans.com/wp-content/uploads/2020/05/hng-internship-2020.jpg",
+                    "image_url": "<img src="/main.jpg" />",
                     "buttons": [{
                         "type": "web_url",
                         "url": "https://www.facebook.com/HNG-Internship-115577009820117/",
@@ -108,7 +115,7 @@ function sendGenericMessage(sender) {
                 }, {
                     "title": "Learn on Internship",
                     "subtitle": "Ask anything on our internships",
-                    "image_url": "https://www.opportunitiesforafricans.com/wp-content/uploads/2020/05/hng-internship-2020.jpg",
+                    "image_url": "<img src="/main2.jpg" />",
                     "buttons": [{
                         "type": "postback",
                         "title": "What's the benefit?",
