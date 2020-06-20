@@ -109,7 +109,7 @@ function sendGenericMessage(sender) {
                         "title": "HNG on Twitter"
                     },{
                         "type": "web_url",
-                        "url": "mailto:hngi7@hng.tech",
+                        "url": "https://mailto:hngi7@hng.tech",
                         "title": "Email us HNG"
                     }],
                 }, {
@@ -120,15 +120,15 @@ function sendGenericMessage(sender) {
                         "type": "postback",
                         "title": "What's the benefit?",
 
-                        "payload": "During the course of the internship, you will be introduced to different projects to work on. These projects could be added to your portfolio as quality samples to put you ahead of the competition when job hunting",
+                        "payload": "During the course of the internship, you will be introduced to different projects to work on.",
                     },{
                         "type": "postback",
                         "title": "Remote Learning",
-                        "payload": "Our aim is to help everyone willing to kick-start a career in tech without distance being a barrier. We have made our internship flexible to accommodate you regardless of your location or timezone",
+                        "payload": "Our aim is to help everyone willing to kick-start a career in tech without distance being a barrier.",
                     }, {
                         "type": "postback",
                         "title": "The Future",
-                        "payload": "The HNG Internship is an ambitious attempt to change the way education is done in Africa. It’s the bridge between learning to code and becoming the best in the world.",
+                        "payload": "The HNG Internship is an ambitious attempt to change the way education is done",
                     }],
                 },  {
                     "title": "Become an Intern",
@@ -137,15 +137,15 @@ function sendGenericMessage(sender) {
                     "buttons": [{
                         "type": "postback",
                         "title": "Apply",
-                        "payload": "The HNG internship is a 3-month remote internship designed to find and develop the most talented software developers. Everyone is welcomed to participate (there is no entrance exam). Anyone can log into the internship using their laptop. Each week we give tasks!",
+                        "payload": "The HNG internship is a 3-month remote internship!",
                     },{
                         "type": "postback",
                         "title": "Onboard team ",
-                        "payload": "Join one of the best remote learning opportunities in tech by signing up with us. Expand your knowledge with new challenging tasks and kick-start your career in tech. This is also a chance to connect with valuable and efficient teammates across the globe from the comfort of your home.",
+                        "payload": "Join one of the best remote learning opportunities in tech by signing up with us.",
                     }, {
                         "type": "postback",
                         "title": "Products",
-                        "payload": "Throughout the internship, you will work on scalable products. This will give you an insight into real-world projects and prepare you for more challenging tasks as you take on real-time jobs after the internship!",
+                        "payload": "Throughout the internship, you will work on scalable products. ",
                     }],
                 }]  
             } 
