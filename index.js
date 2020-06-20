@@ -98,7 +98,7 @@ function sendGenericMessage(sender) {
                 "elements": [{
                     "title": "HNG Community",
                     "subtitle": "Communities to Follow",
-                    "image_url": "http://1u88jj3r4db2x4txp44yqfj1.wpengine.netdna-cdn.com/wp-content/uploads/2016/04/chatbot-930x659.jpg",
+                    "image_url": "https://www.opportunitiesforafricans.com/wp-content/uploads/2020/05/hng-internship-2020.jpg",
                     "buttons": [{
                         "type": "web_url",
                         "url": "https://www.facebook.com/HNG-Internship-115577009820117/",
@@ -109,13 +109,13 @@ function sendGenericMessage(sender) {
                         "title": "HNG on Twitter"
                     },{
                         "type": "web_url",
-                        "url": "https://mailto:hngi7@hng.tech",
+                        "url": "mailto:hngi7@hng.tech",
                         "title": "Email us HNG"
                     }],
                 }, {
                     "title": "Learn on Internship",
                     "subtitle": "Ask anything on our internships",
-                    "image_url": "http://1u88jj3r4db2x4txp44yqfj1.wpengine.netdna-cdn.com/wp-content/uploads/2016/04/chatbot-930x659.jpg",
+                    "image_url": "https://www.opportunitiesforafricans.com/wp-content/uploads/2020/05/hng-internship-2020.jpg",
                     "buttons": [{
                         "type": "postback",
                         "title": "What's the benefit?",
@@ -133,7 +133,7 @@ function sendGenericMessage(sender) {
                 },  {
                     "title": "Become an Intern",
                     "subtitle": "How does it work",
-                    "image_url": "http://www.brandknewmag.com/wp-content/uploads/2015/12/cortana.jpg",
+                    "image_url": "https://www.opportunitiesforafricans.com/wp-content/uploads/2020/05/hng-internship-2020.jpg",
                     "buttons": [{
                         "type": "postback",
                         "title": "Apply",
