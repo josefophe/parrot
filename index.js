@@ -98,7 +98,7 @@ function sendGenericMessage(sender) {
                 "elements": [{
                     "title": "HNG Community",
                     "subtitle": "Communities to Follow",
-                    "image_url": "<img src="/main.jpg" />",
+                 //   "image_url": "<img src="/main.jpg" />",
                     "buttons": [{
                         "type": "web_url",
                         "url": "https://www.facebook.com/HNG-Internship-115577009820117/",
@@ -115,10 +115,11 @@ function sendGenericMessage(sender) {
                 }, {
                     "title": "Learn on Internship",
                     "subtitle": "Ask anything on our internships",
-                    "image_url": "<img src="/main2.jpg" />",
+               //     "image_url": "<img src="/main2.jpg" />",
                     "buttons": [{
                         "type": "postback",
                         "title": "What's the benefit?",
+
                         "payload": "During the course of the internship, you will be introduced to different projects to work on. These projects could be added to your portfolio as quality samples to put you ahead of the competition when job hunting",
                     },{
                         "type": "postback",
