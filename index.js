@@ -37,7 +37,7 @@ app.listen(app.get('port'), function() {
 })
 
 
-// API End Point - added by Stefan
+// API End Point 
 
 app.post('/webhook/', function (req, res) {
     messaging_events = req.body.entry[0].messaging
@@ -50,7 +50,7 @@ app.post('/webhook/', function (req, res) {
                 sendGenericMessage(sender)
                 continue
             }
-            sendTextMessage(sender, "parrot: " + text.substring(0, 200))
+            sendTextMessage(sender, "HNG7: " + text.substring(0, 200))
         }
         if (event.postback) {
             text = JSON.stringify(event.postback)
