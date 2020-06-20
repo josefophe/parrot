@@ -98,7 +98,7 @@ function sendGenericMessage(sender) {
                 "elements": [{
                     "title": "HNG Community",
                     "subtitle": "Communities to Follow",
-                    "image_url": "https://www.opportunitiesforafricans.com/wp-content/uploads/2020/05/hng-internship-2020.jpg",
+         //           "image_url": "https://www.opportunitiesforafricans.com/wp-content/uploads/2020/05/hng-internship-2020.jpg",
                     "buttons": [{
                         "type": "web_url",
                         "url": "https://www.facebook.com/HNG-Internship-115577009820117/",
@@ -115,7 +115,7 @@ function sendGenericMessage(sender) {
                 }, {
                     "title": "Learn on Internship",
                     "subtitle": "Ask anything on our internships",
-                    "image_url": "https://www.opportunitiesforafricans.com/wp-content/uploads/2020/05/hng-internship-2020.jpg",
+              //      "image_url": "https://www.opportunitiesforafricans.com/wp-content/uploads/2020/05/hng-internship-2020.jpg",
                     "buttons": [{
                         "type": "postback",
                         "title": "What's the benefit?",
@@ -133,7 +133,7 @@ function sendGenericMessage(sender) {
                 },  {
                     "title": "Become an Intern",
                     "subtitle": "How does it work",
-                    "image_url": "https://www.opportunitiesforafricans.com/wp-content/uploads/2020/05/hng-internship-2020.jpg",
+   //                 "image_url": "https://www.opportunitiesforafricans.com/wp-content/uploads/2020/05/hng-internship-2020.jpg",
                     "buttons": [{
                         "type": "postback",
                         "title": "Apply",
