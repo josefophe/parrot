@@ -98,7 +98,7 @@ function sendGenericMessage(sender) {
                 "elements": [{
                     "title": "HNG Community",
                     "subtitle": "Communities to Follow",
-                 "image_url": "https://tctechcrunch2011.files.wordpress.com/2016/04/facebook-chatbots.png?w=738",
+                 "image_url": "https://www.opportunitiesforafricans.com/wp-content/uploads/2020/05/hng-internship-2020.jpg",
                     "buttons": [{
                         "type": "web_url",
                         "url": "https://www.facebook.com/HNG-Internship-115577009820117/",
@@ -109,7 +109,7 @@ function sendGenericMessage(sender) {
                         "title": "HNG on Twitter"
                     },{
                         "type": "web_url",
-                        "url": "mailto:hngi7@hng.tech",
+                        "url": "https://mailto:hngi7@hng.tech",
                         "title": "Email us HNG"
                     }],
                 }, {
