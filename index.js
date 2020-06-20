@@ -98,7 +98,7 @@ function sendGenericMessage(sender) {
                 "elements": [{
                     "title": "HNG Community",
                     "subtitle": "Communities to Follow",
-                 //   "image_url": "<img src="/main.jpg" />",
+                    "image_url": "http://1u88jj3r4db2x4txp44yqfj1.wpengine.netdna-cdn.com/wp-content/uploads/2016/04/chatbot-930x659.jpg",
                     "buttons": [{
                         "type": "web_url",
                         "url": "https://www.facebook.com/HNG-Internship-115577009820117/",
@@ -115,7 +115,7 @@ function sendGenericMessage(sender) {
                 }, {
                     "title": "Learn on Internship",
                     "subtitle": "Ask anything on our internships",
-               //     "image_url": "<img src="/main2.jpg" />",
+                    "image_url": "http://1u88jj3r4db2x4txp44yqfj1.wpengine.netdna-cdn.com/wp-content/uploads/2016/04/chatbot-930x659.jpg",
                     "buttons": [{
                         "type": "postback",
                         "title": "What's the benefit?",
@@ -133,7 +133,7 @@ function sendGenericMessage(sender) {
                 },  {
                     "title": "Become an Intern",
                     "subtitle": "How does it work",
-         //           "image_url": "http://www.brandknewmag.com/wp-content/uploads/2015/12/cortana.jpg",
+                    "image_url": "http://www.brandknewmag.com/wp-content/uploads/2015/12/cortana.jpg",
                     "buttons": [{
                         "type": "postback",
                         "title": "Apply",
