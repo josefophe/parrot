@@ -136,7 +136,7 @@ function sendGenericMessage(sender) {
          //           "image_url": "http://www.brandknewmag.com/wp-content/uploads/2015/12/cortana.jpg",
                     "buttons": [{
                         "type": "postback",
-                        "title": "Applyto be an intern",
+                        "title": "Apply",
                         "payload": "The HNG internship is a 3-month remote internship designed to find and develop the most talented software developers. Everyone is welcomed to participate (there is no entrance exam). Anyone can log into the internship using their laptop. Each week we give tasks!",
                     },{
                         "type": "postback",
@@ -144,7 +144,7 @@ function sendGenericMessage(sender) {
                         "payload": "Join one of the best remote learning opportunities in tech by signing up with us. Expand your knowledge with new challenging tasks and kick-start your career in tech. This is also a chance to connect with valuable and efficient teammates across the globe from the comfort of your home.",
                     }, {
                         "type": "postback",
-                        "title": "Products and Services",
+                        "title": "Products",
                         "payload": "Throughout the internship, you will work on scalable products. This will give you an insight into real-world projects and prepare you for more challenging tasks as you take on real-time jobs after the internship!",
                     }],
                 }]  
