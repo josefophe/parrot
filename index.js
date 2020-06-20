@@ -3,10 +3,10 @@ var bodyParser = require('body-parser')
 var request = require('request')
 var app = express()
 
-process.env.PWD = process.cwd()
+// process.env.PWD = process.cwd()
 
 // for image
-app.use(express.static(process.env.PWD + '/public'));
+// app.use(express.static(process.env.PWD + '/public'));
 
 
 // server 
@@ -46,7 +46,7 @@ app.post('/webhook/', function (req, res) {
         sender = event.sender.id
         if (event.message && event.message.text) {
             text = event.message.text
-            if (text === 'hng') {
+            if (text === 'HNG7') {
                 sendGenericMessage(sender)
                 continue
             }
@@ -133,7 +133,7 @@ function sendGenericMessage(sender) {
                 },  {
                     "title": "Become an Intern",
                     "subtitle": "How does it work",
-                    "image_url": "http://www.brandknewmag.com/wp-content/uploads/2015/12/cortana.jpg",
+         //           "image_url": "http://www.brandknewmag.com/wp-content/uploads/2015/12/cortana.jpg",
                     "buttons": [{
                         "type": "postback",
                         "title": "Applyto be an intern",
