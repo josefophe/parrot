@@ -3,7 +3,20 @@ var bodyParser = require('body-parser')
 var request = require('request')
 var app = express()
 
-// process.env.PWD = process.cwd()
+var admin = require('firebase-admin');
+
+
+
+
+
+var serviceAccount = require("./public/firebasepk.json");
+
+admin.initializeApp({
+	  credential: admin.credential.cert(serviceAccount),
+	  databaseURL: "https://parrot-dcc75.firebaseio.com"
+});
+
+//  process.env.PWD = process.cwd()
 
 // for image
 // app.use(express.static(process.env.PWD + '/public'));
