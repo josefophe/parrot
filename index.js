@@ -73,17 +73,16 @@ app.post('/webhook/', function (req, res) {
             text = event.message.text
             if (text === 'HNG7') {
                 sendGenericMessage(sender)
-	    
+	 	
+
                 continue
             }
+
+	   if (text === 'mock') {             
+		   require('/reactapp/src/App.js')
+
+		continue }
 // added this file
-	   if (test === 'mock') {
-
-	        app.get('/reactapp/src/App.js', function (req, res) {
-			     res.send('App.js')
-		   })
-
-		continue
 
             sendTextMessage(sender, "HNG7: " + text.substring(0, 200))
         }
@@ -95,6 +94,7 @@ app.post('/webhook/', function (req, res) {
     }
     res.sendStatus(200)
 })
+
 
 var token = "EAAHxihjsn3gBANEZBPwyJdAteC5kxQPogZBxeR6eFezT4GPPgqBOJJXmu54dlv3UzvPOpPJEVEqhSpIjQUWcFNP67gd0xZBXOVRRkqTcirn802dtK51pZBQL3ETVjubZBiDEIi1AsJdbYo4I9j8fAHFq0FBflDwsMHJVl3eBe5wZDZD"
 
