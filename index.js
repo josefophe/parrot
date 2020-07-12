@@ -5,9 +5,21 @@ var app = express()
 
 var admin = require('firebase-admin');
 
+var refreshToken; 
 
 
 
+// Get refresh token from OAuth2 flow
+
+admin.initializeApp({
+  credential: admin.credential.refreshToken(refreshToken),
+  databaseURL: 'https://parrot-dcc75.firebaseio.com'
+});
+
+
+
+
+// Add Firebase service account
 
 var serviceAccount = require("./public/firebasepk.json");
 
@@ -61,8 +73,18 @@ app.post('/webhook/', function (req, res) {
             text = event.message.text
             if (text === 'HNG7') {
                 sendGenericMessage(sender)
+	    
                 continue
             }
+// added this file
+	   if (test === 'mock') {
+
+	        app.get('/reactapp/src/App.js', function (req, res) {
+			     res.send('App.js')
+		   })
+
+		continue
+
             sendTextMessage(sender, "HNG7: " + text.substring(0, 200))
         }
         if (event.postback) {
